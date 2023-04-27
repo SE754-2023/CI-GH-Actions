@@ -14,4 +14,11 @@ class BankAccountTest {
     b.deposit(100);
     assertEquals(100,b.getBalance());
   }
+
+  @Test
+  public void test2(){
+    BankAccount b = new BankAccount();
+    b.deposit(100);
+    assertEquals(50,b.getBalance());
+  }
 }
