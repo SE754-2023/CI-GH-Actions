@@ -31,4 +31,13 @@ assertEquals(10,balance);
 
   }
 
+  @Test
+  public void test3(){
+    bank.deposit(10.00);
+    bank.withdraw(5.00);
+    double balance = bank.getBalance();
+    assertEquals(5,balance);
+
+  }
+
 }
