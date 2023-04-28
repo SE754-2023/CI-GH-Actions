@@ -61,7 +61,7 @@ public class BankAccount {
             throw new BalanceNotEnoughException();
         }
 
-        balance = balance - amount;
+        balance = balance + amount;
         numberTransactions++;
     }
 
